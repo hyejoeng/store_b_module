@@ -11,12 +11,20 @@ class VideoScreen extends StatefulWidget {
 class _VideoScreenState extends State<VideoScreen> {
   late VideoPlayerController _videoPlayerController;
 
+  @override
+  void initState() {
+    super.initState();
+
+  }
+
+  void _initVideo() async {
+  }
 
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-
+        body: Center(child: Text('비디오 화면')),
       ),
     );
   }
